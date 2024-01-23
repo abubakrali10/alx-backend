@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+this module creates a simple pagination
+"""
 import csv
 import math
 from typing import List
@@ -34,7 +37,7 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-        Simple pagination
+        Simple pagination for api
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
